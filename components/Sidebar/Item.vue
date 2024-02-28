@@ -26,9 +26,6 @@ watch(
   [() => address.value, () => route],
   ([newAddress, newRoute], []) => {
     if (newRoute.path === to) {
-      return router.push(Constants.ROUTES[0].path)
-    }
-    if (newRoute.path === to) {
       return onActive && onActive(_id, indexItem)
     }
   },
