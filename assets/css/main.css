@@ -1,0 +1,17 @@
+@import 'K2D.css';
+@import 'Satoshi.css';
+@import './tailwind.css';
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+#__nuxt {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+* {
+  font-family: 'Satoshi', 'K2D', sans-serif;
+}

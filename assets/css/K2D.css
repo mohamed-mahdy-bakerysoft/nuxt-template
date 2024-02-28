@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'K2D';
+  src: url('../../assets/fonts/K2D/K2D-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'K2D';
+  src: url('../../assets/fonts/K2D/K2D-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'K2D';
+  src: url('../../assets/fonts/K2D/K2D-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'K2D';
+  src: url('../../assets/fonts/K2D/K2D-MediumItalic.ttf') format('truetype');
+  font-weight: 500; /* Medium */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'K2D';
+  src: url('../../assets/fonts/K2D/K2D-SemiBold.ttf') format('truetype');
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'K2D';
+  src: url('../../assets/fonts/K2D/K2D-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600; /* SemiBold */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'K2D';
+  src: url('../../assets/fonts/K2D/K2D-Bold.ttf') format('truetype');
+  font-weight: bold; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'K2D';
+  src: url('../../assets/fonts/K2D/K2D-BoldItalic.ttf') format('truetype');
+  font-weight: bold; /* Bold */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'K2D';
+  src: url('../../assets/fonts/K2D/K2D-ExtraBold.ttf') format('truetype');
+  font-weight: 800; /* Black */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'K2D';
+  src: url('../../assets/fonts/K2D/K2D-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800; /* Black */
+  font-style: italic;
+}
