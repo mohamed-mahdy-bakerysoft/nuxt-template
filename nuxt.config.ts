@@ -7,6 +7,13 @@ export default defineNuxtConfig({
   device: {
     refreshOnResize: true
   },
+  components: [
+    '~/components',
+    {
+      path: '~/libs/sdk-ts/packages/ui/components',
+      prefix: 'Base'
+    }
+  ],
   typescript: {
     typeCheck: 'build', // we recommend build so you do typescript checks only on build type
     tsConfig: {

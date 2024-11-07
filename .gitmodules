@@ -1,3 +1,4 @@
 [submodule "libs/sdk-ts"]
 	path = libs/sdk-ts
 	url = https://github.com/FluxNFTLabs/sdk-ts.git
+	branch = main

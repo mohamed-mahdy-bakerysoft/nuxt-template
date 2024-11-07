@@ -1,13 +1,17 @@
 {
-  "name": "flux-bazaar",
+  "name": "flux-template",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "build": "yarn pull-sdk && nuxt build",
+    "dev": "yarn pull-sdk && nuxt dev",
+    "generate": "yarn pull-sdk && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "install-all": "yarn install && cd libs/sdk-ts && yarn install && cd packages/ui && yarn install"
+    "install-all": "yarn pull-sdk && yarn install && cd libs/sdk-ts && yarn install && cd packages/ui && yarn install",
+    "pull-sdk": "yarn init-submodule && cd libs/sdk-ts && git checkout ${SDK_B:=main} && git pull && cd ../..",
+    "init-submodule": "git submodule update --init --recursive",
+    "test": "jest",
+    "analyze": "nuxt analyze"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -18,7 +22,7 @@
     "postcss": "^8.4.31",
     "sass": "^1.69.5",
     "typescript": "5.0",
-    "vue-tsc": "1.8.8"
+    "vue-tsc": "2.0.26"
   },
   "dependencies": {
     "@bangjelkoski/vite-plugin-node-polyfills": "^0.0.2",
@@ -29,6 +33,7 @@
     "@improbable-eng/grpc-web-node-http-transport": "^0.15.0",
     "@mdi/font": "^7.3.67",
     "@nuxtjs/device": "^3.1.1",
+    "@next/bundle-analyzer": "^14.2.5",
     "@particle-network/auth": "^1.2.2",
     "@pinia/nuxt": "^0.5.1",
     "@tendermint/sig": "^0.6.0",
